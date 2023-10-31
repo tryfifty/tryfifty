@@ -16,7 +16,7 @@ const WaitlistPage = () => {
       .from("waitlist")
       .insert([{ email: email }]);
 
-      console.log(data, error);
+    console.log(data, error);
 
     if (!error) {
       setSucceeded(true);
@@ -24,9 +24,9 @@ const WaitlistPage = () => {
   };
 
   return (
-    <main className="flex min-h-screen  w-full h-screen flex-col items-center justify-center p-24 bg-gray-100">
+    <main className="flex min-h-screen  w-full h-screen flex-col items-center justify-center p-12 lg:p-24 bg-gray-100">
       <Header />
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full items-center">
         <h1 className="text-4xl font-bold text-center">
           {!succeeded ? "Join waitlist" : "You're in!"}
         </h1>
@@ -36,29 +36,31 @@ const WaitlistPage = () => {
             : "We’ll notify you as soon as our product is ready."}
         </p>
         {!succeeded && (
-          <>
+          <div className="flex flex-col w-full lg:w-96 ">
             <input
               type="text"
               name="email"
               id="email"
-              className="peer flex text-primary transition-colors placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-black focus:placeholder:text-gray-8 text-md px-4 py-3 h-[--input-size-lg] rounded-full bg-canvas border border-gray-7 hover:border-gray-8 focus:border-gray-11 data-[invalid]:border-error mt-8 w-96"
+              className="flex text-primary transition-colors placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-black focus:placeholder:text-gray-8 text-md px-4 py-3 h-[--input-size-lg] rounded-full border mt-8"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-            ></input>
-            <p className="w-96 mt-4">
+            />
+            <p className="mt-4">
               <a
                 data-variant="primary"
-                className="group relative border border-transparent inline-flex justify-center items-center rounded-full font-medium outline-none data-[state=active]:pointer-events-none gap-[.3em] disabled:pointer-events-none transition-colors bg-primary text-canvas hover:bg-primary/75 data-[state=open]:bg-primary/75 disabled:opacity-30 text-base py-3 px-6 min-w-[12em] w-full bg-black text-white hover:bg-gray-500"
+                className="border border-transparent inline-flex justify-center items-center rounded-full outline-none data-[state=active]:pointer-events-none gap-[.3em] disabled:pointer-events-none transition-colors bg-primary text-canvas hover:bg-primary/75 data-[state=open]:bg-primary/75 disabled:opacity-30 text-base py-3 px-6  w-full bg-black text-white hover:bg-gray-500"
                 onClick={() => handleSubmit()}
               >
                 <span className="contents">Submit</span>
               </a>
             </p>
-          </>
+          </div>
         )}
       </div>
-      <Footer />
+      <div className="fixed bottom-0 w-full">
+        <Footer />
+      </div>
     </main>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" absolute bottom-0 flex w-full h-32 pt-12 px-12">
+    <div className="flex w-full h-32 pt-12 px-12">
       <div className="border-t-[1px] w-full flex flex-row justify-between items-center ">
         <div className="flex flex-row">
           <svg
