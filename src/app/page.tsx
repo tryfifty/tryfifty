@@ -52,7 +52,7 @@ export default function Home() {
                   <p>
                     <a
                       data-variant="primary"
-                      className="group relative border border-transparent inline-flex justify-center items-center rounded-full font-medium outline-none data-[state=active]:pointer-events-none gap-[.3em] disabled:pointer-events-none transition-colors bg-primary text-canvas hover:bg-primary/75 data-[state=open]:bg-primary/75 disabled:opacity-30 text-base h-[--button-size-lg] px-6 min-w-[12em] w-full sm:w-auto bg-black text-white py-2 hover:bg-gray-500"
+                      className="group relative border border-transparent inline-flex justify-center items-center rounded-full font-medium outline-none data-[state=active]:pointer-events-none gap-[.3em] disabled:pointer-events-none transition-colors text-canvas hover:bg-secondary/75 data-[state=open]:bg-secondary/75 disabled:opacity-30 text-base h-[--button-size-lg] px-6 min-w-[12em] w-full sm:w-auto bg-black text-white py-2 hover:bg-gray-500"
                       href="/waitlist"
                     >
                       <span className="contents">Join Waitlist →</span>
@@ -119,8 +119,8 @@ export default function Home() {
         </div>
       </div>
       <div className="px-12">
-      <Footer />
-      </div>             
+        <Footer />
+      </div>
     </main>
   );
 }
