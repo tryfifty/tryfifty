@@ -66,7 +66,7 @@ const LBService = () => {
             </h1>
             <h3 className="mt-16 font-bold text-2xl">What We Offer</h3>
             <p className="text-center text-gray-600 mt-4">
-              우리의 서비스는 아웃소싱 개발의 A부터 Z까지 모든 과정을
+              우리 서비스는 아웃소싱 개발의 A부터 Z까지 모든 과정을
               지원합니다.
               <br />
             </p>
