@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex w-full py-4 border-t-[1px]">
-      <div className=" w-full flex flex-row justify-between items-center">
+    <div className="flex py-4 border-t-[1px] w-full">
+      <div className="flex flex-row justify-between items-center w-full">
         <div className="flex flex-row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +20,11 @@ const Footer = () => {
             />
           </svg>
 
-          <p className="text-xs ml-2 text-gray-800"> Seoul, Korea </p>
+          <p className="ml-2 text-gray-800 text-xs"> Seoul, Korea </p>
+          <p className="ml-2 text-gray-800 text-xs">  / Montréal, Canada</p>
         </div>
         <div className="flex flex-row">
-          <p className="text-xs text-gray-800"> @2023 Tryfifty, Inc. </p>
+          <p className="text-gray-800 text-xs"> @2024 Tryfifty, Inc. </p>
         </div>
       </div>
     </div>

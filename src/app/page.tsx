@@ -34,36 +34,36 @@ export default function Home() {
   }, [nextIndex]);
 
   return (
-    <main className="flex min-h-screen flex-col bg-gray-100">
+    <main className="flex flex-col bg-gray-100 min-h-screen">
       <div className="flex flex-col flex-1">
-        <div className="pb-4 pt-16 lg:flex lg:h-[95vh] lg:pb-16">
-          <div className="relative mx-auto flex w-full max-w-screen-3xl flex-col justify-end gap-16 lg:flex-row">
-            <div className="inset-0 flex items-center lg:absolute">
-              <div className="mx-auto w-full max-w-[1656px] px-4">
-                <div className="mx-auto max-w-md text-center lg:ml-0 lg:max-w-[36%] lg:text-left xl:max-w-md">
-                  <h1 className="mt-9 text-4xl font-['SF Pro Display'] lg:mt-0 lg:text-5xl font-semibold">
+        <div className="lg:flex flex-1 pt-16 pb-4">
+          <div className="relative flex lg:flex-row flex-col justify-end gap-16 mx-auto w-full max-w-screen-3xl">
+            <div className="inset-0 flex items-center">
+              <div className="mx-auto px-4 w-full max-w-[1656px]">
+                <div className="mx-auto lg:ml-0 max-w-md xl:max-w-md text-center lg:text-left">
+                  <h1 className="mt-9 lg:mt-0 font-['SF font-semibold text-4xl lg:text-5xl Display'] Pro">
                     Tryfifty.ai
                   </h1>
                   {/* <Image src='/logo.png' width={150} height={50} alt={""} /> */}
-                  <p className="mb-9 mt-4 text-lg">
+                  <p className="mt-4 mb-9 text-lg">
                     We are building something exciting in the software
                     development industry. Join the waitlist to get early access.
                   </p>
                   <p>
                     <a
                       data-variant="primary"
-                      className="group relative border border-transparent inline-flex justify-center items-center rounded-full font-medium outline-none data-[state=active]:pointer-events-none gap-[.3em] disabled:pointer-events-none transition-colors text-canvas hover:bg-secondary/75 data-[state=open]:bg-secondary/75 disabled:opacity-30 text-base h-[--button-size-lg] px-6 min-w-[12em] w-full sm:w-auto bg-black text-white py-2 hover:bg-gray-500"
+                      className="inline-flex relative justify-center items-center gap-[.3em] bg-black data-[state=open]:bg-secondary/75 hover:bg-secondary/75 hover:bg-gray-500 disabled:opacity-30 px-6 py-2 border border-transparent rounded-full w-full min-w-[12em] h-[--button-size-lg] font-medium text-base text-canvas text-white transition-colors data-[state=active]:pointer-events-none disabled:pointer-events-none group outline-none"
                       href="/waitlist"
                     >
-                      <span className="contents">Join Waitlist →</span>
+                      <span className="contents">Contact Us!</span>
                     </a>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="mx-auto w-full max-w-[600px] px-4 lg:mx-0 lg:w-1/2 lg:max-w-[60%] lg:flex-1 lg:px-0 xl:w-3/5">
-              <div className="relative h-full w-full overflow-hidden">
-                <div className="pb-[100%] lg:hidden"></div>
+            <div className="lg:flex-1 mx-auto lg:mx-0 px-4 lg:px-0 w-full lg:w-3/5 max-w-[600px] lg:max-w-[60%]">
+              <div className="relative w-full h-full overflow-hidden">
+                <div className="lg:hidden pb-[100%]"></div>
                 {/* <img
                   alt=""
                   sizes="(max-width: 1023px) 600px, 60vw"
@@ -72,7 +72,7 @@ export default function Home() {
                 /> */}
                 {/* // style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"> */}
                 <div className="absolute inset-0 opacity-100">
-                  <div className="overflow-hidden absolute inset-0 rounded-2xl lg:rounded-r-none 3xl:rounded-2xl">
+                  <div className="absolute inset-0 rounded-2xl lg:rounded-r-none 3xl:rounded-2xl overflow-hidden">
                     <img
                       alt=""
                       data-nimg="fill"
@@ -90,7 +90,7 @@ export default function Home() {
                   aria-expanded="false"
                   aria-controls="radix-:r5q:"
                   data-state="closed"
-                  className="rounded-full bg-blackA-9 text-whiteA-11 transition-colors hover:bg-blackA-12 hover:text-whiteA-12 data-[state=open]:bg-blackA-12 data-[state=open]:text-whiteA-12 absolute bottom-4 right-4"
+                  className="right-4 bottom-4 absolute bg-blackA-9 data-[state=open]:bg-blackA-12 hover:bg-blackA-12 rounded-full text-whiteA-11 data-[state=open]:text-whiteA-12 hover:text-whiteA-12 transition-colors"
                 >
                   <span className="block p-0.5 text-xl">
                     <svg
@@ -101,7 +101,7 @@ export default function Home() {
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="shrink-0 h-[1em] w-[1em]"
+                      className="w-[1em] h-[1em] shrink-0"
                     >
                       <g>
                         <path d="M12 20.357a8.357 8.357 0 1 0 0-16.714 8.357 8.357 0 0 0 0 16.714ZM12 12v4.5"></path>
