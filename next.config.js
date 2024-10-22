@@ -3,7 +3,7 @@ const nextConfig = {
   // output: "export",
   env: {
     NEXT_PUBLIC_BASE_PATH:
-      process.env.NODE_ENV === "production" ? "tryfifty.github.io" : "",
+      process.env.NODE_ENV === "production" ? "https://tryfifty.github.io" : "",
   },
 };
 
