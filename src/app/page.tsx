@@ -5,13 +5,13 @@ import { useState, useEffect } from "react";
 import Footer from "./components/footer";
 
 const images = [
-  "/0.png",
-  "/1.png",
-  "/2.png",
-  "/3.png",
-  "/4.png",
-  "/5.png",
-  "/6.png",
+  `${process.env.NEXT_PUBLIC_BASE_PATH}/0.png`,
+  `${process.env.NEXT_PUBLIC_BASE_PATH}/1.png`,
+  `${process.env.NEXT_PUBLIC_BASE_PATH}/2.png`,
+  `${process.env.NEXT_PUBLIC_BASE_PATH}/3.png`,
+  `${process.env.NEXT_PUBLIC_BASE_PATH}/4.png`,
+  `${process.env.NEXT_PUBLIC_BASE_PATH}/5.png`,
+  `${process.env.NEXT_PUBLIC_BASE_PATH}/6.png`,
   // ...other images
 ];
 
