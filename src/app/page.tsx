@@ -47,15 +47,17 @@ export default function Home() {
                   {/* <Image src='/logo.png' width={150} height={50} alt={""} /> */}
                   <p className="mt-4 mb-9 text-lg">
                     We are building something exciting in the software
-                    development industry. Join the waitlist to get early access.
+                    development industry using AI.
+                    <br />
+                    Cool stuff coming soon!
                   </p>
                   <p>
                     <a
                       data-variant="primary"
-                      className="inline-flex relative justify-center items-center gap-[.3em] bg-black data-[state=open]:bg-secondary/75 hover:bg-secondary/75 hover:bg-gray-500 disabled:opacity-30 px-6 py-2 border border-transparent rounded-full w-full min-w-[12em] h-[--button-size-lg] font-medium text-base text-canvas text-white transition-colors data-[state=active]:pointer-events-none disabled:pointer-events-none group outline-none"
+                      className="inline-flex relative justify-center items-center gap-[.3em] bg-black data-[state=open]:bg-secondary/75 hover:bg-secondary/75 hover:bg-gray-500 disabled:opacity-30 px-6 py-2 border border-transparent rounded-full w-full min-w-[12em] h-[--button-size-lg] font-medium text-base text-canvas text-white transition-colors disabled:pointer-events-none group outline-none"
                       href="/waitlist"
                     >
-                      <span className="contents">Contact Us!</span>
+                      <span className="contents">Contact Us</span>
                     </a>
                   </p>
                 </div>
